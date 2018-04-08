@@ -3,17 +3,17 @@
 namespace ClassificationExample.Controllers
 {
     [Route("api/[controller]")]
-    public class ValuesController : Controller
+    public class ClassifyController : Controller
     {
         private readonly IUsersClassificationService _classificationService;
 
-        public ValuesController(IUsersClassificationService classificationService)
+        public ClassifyController(IUsersClassificationService classificationService)
         {
             _classificationService = classificationService;
         }
 
         [HttpGet]
-        public UserType Get(UserStatistics statistics)
+        public UserType Classify(UserStatistics statistics)
         {
             var result = _classificationService.ClassifyUser(statistics);
             return result;
