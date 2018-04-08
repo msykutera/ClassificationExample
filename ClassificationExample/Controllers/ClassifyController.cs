@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ClassificationExample.Controllers
+namespace ClassificationExample
 {
     [Route("api/[controller]")]
     public class ClassifyController : Controller
