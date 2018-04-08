@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "a4f38515-687f-4f98-a480-e4d1090c5e9c",
+		"name": "Classifier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classifier example request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3295/api/values?MoneySpent=521.1&DailyLoginsInRow=4&CommentsCount=5&AccountAge=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3295",
+					"path": [
+						"api",
+						"values"
+					],
+					"query": [
+						{
+							"key": "MoneySpent",
+							"value": "521.1"
+						},
+						{
+							"key": "DailyLoginsInRow",
+							"value": "4"
+						},
+						{
+							"key": "CommentsCount",
+							"value": "5"
+						},
+						{
+							"key": "AccountAge",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
